@@ -1,0 +1,13 @@
+<% include ./partials/header.ejs %>
+<h3>This is a list of skills:</h3>
+  <ul>
+    <% skills.forEach(function (skill) { %>
+      <li>
+        <%= skill.name %> is a
+          <%= skill.level %>
+      </li>
+      <% }); %>
+
+  </ul>
+
+<% include ./partials/footer.ejs %>
